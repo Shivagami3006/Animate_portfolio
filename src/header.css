@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    background: rgba(0,0,0,0.8);
+    /* backdrop-filter: saturate(180%) blur(20px); */
+    background-color:transparent;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    margin: none;
+    top: 0;
+    left: 0;
+
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .header {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    /* opacity: 0; */
+    animation-name: slideRight ;
+    animation-duration: 5s;
+}
+
+.navbar a {
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+    animation-name: slideTop ;
+    animation-duration: 5s;
+
+}
+
+.navbar a:hover {
+    display: inline-block;
+    padding: 12px 28px;
+    background: transparent;
+    border-radius: 40px;
+    font-size: 16px;
+    color:#0ef;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25 #0ef
+
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(1px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(1px);
+        opacity: 1;
+    }
+}
+

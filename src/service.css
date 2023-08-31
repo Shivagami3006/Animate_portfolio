@@ -1,0 +1,82 @@
+.container {
+  padding: 90px;
+}
+
+#service {
+  color: aliceblue;
+  font-size: 50px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+
+.sub-tittle {
+  text-align: center;
+  font-size: 60px;
+  padding-top: 10px;
+}
+
+.sub-tittle span {
+  color: #0ef;
+}
+
+.service-list {
+  display: flex;
+  /* grid-template-columns: repeat( minmax(259px, 1fr)) 100px; */
+  margin-top: 50px;
+  grid-gap: 50px;
+}
+
+.service-list div {
+  background-color: transparent;
+  padding: 35px;
+  font-size: 13px;
+  font-weight: 10px;
+  border-right: 10px;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+}
+
+.icons {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.service-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.service-list div a {
+  text-decoration: none !important;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.read {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  font-size: 16px;
+  color: #081b;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 1;
+  border-radius: 8px;
+  animation: slideTop;
+  animation-duration: 2s;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+
+.read:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 
+  0 0 100px cyan,
+    0 0 200px cyan;
+}
+.service-list div:hover{
+    transform:translateY(-10px) ;
+}
