@@ -25,7 +25,7 @@ function Home() {
       <section className="home">
         <div className="home-content">
           <h3>Hello It's Me</h3>
-          <h1>Shivagami.R</h1>
+          <h1 className='text'>Shivagami.R</h1>
           <h3>And I'm a   <span ref={el}></span></h3>
           <p>
             I'm a web developer fresher
